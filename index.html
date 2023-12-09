@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style/index_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="imgs/logo 1.png" alt="IFIT" class="logo-img">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#nossa-academia">NOSSA ACADEMIA</a></li>
+        <li><a href="treinos.html">SEU TREINO</a></li>
+        <li><a href="#planos">PLANOS</a></li>
+        <li><a href="#contato">CONTATO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ########## SECTION 1 - Home ##########-->
+  <section id="home">
+    <div class="image-carousel">
+      <div class="image-slide">
+        <img src="imgs/slider.png" alt="Imagem 1">
+      </div>
+      <div class="image-slide">
+        <img src="imgs/slider 2.jpg" alt="Imagem 2">
+      </div>
+      <div class="image-slide">
+        <img src="imgs/slider 3.jpg" alt="Imagem 3">
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="circle" data-index="0"></div>
+      <div class="circle" data-index="1"></div>
+      <div class="circle" data-index="2"></div>
+    </div>
+
+  </section>
+
+  <!-- ########## SECTION 2 - Nossa Academia ##########-->
+  <section id="nossa-academia">
+    <div id="nossaacademiatexto">
+      <h2>Nossa Academia</h2>
+      <p>Bem-vindo à nossa academia! Somos dedicados a ajudá-lo a alcançar seus objetivos de condicionamento físico e
+        saúde. Nossa equipe de treinadores experientes e instalações de última geração estão aqui para apoiar sua
+        jornada
+        de fitness.</p>
+    </div>
+    <div id="mascote">
+      <img src="imgs/Mascote.png" alt="Mascote">
+    </div>
+  </section>
+
+  <section id="local">
+
+    <h2>Conheça Nossas Localizações</h2>
+
+    <div class="map-thumbnails">
+      <!-- Miniaturas de mapas aqui -->
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="https://blog.nextfit.com.br/wp-content/uploads/2022/07/treino-perna.jpg" alt="Imagem 1">
+        <p> Av. Hilton Souto Maior, S/N - Mangabeira, João Pessoa - PB, 58055-018</p>
+      </div>
+      <div class="card">
+        <img
+          src="https://tecnofit-site.s3.sa-east-1.amazonaws.com/media/files/2023/03/22115409/aparelho-de-academia-barra-guiada.png"
+          alt="Imagem 2">
+        <p>Av. Visc. de Jequitinhonha, 1145 - Boa Viagem, Recife - PE, 51030-021
+        </p>
+      </div>
+      <div class="card">
+        <img src="imgs/unidade 3.png" alt="Imagem 3">
+        <p>Avenida Dom Luís, 10 - Fortaleza, Ceará</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ########## SECTION 4 - Planos ##########-->
+  <section id="planos">
+    <h2>PLANOS</h2>
+
+
+    <div class="plan-selector">
+      <label for="plan">Escolha um plano: </label>
+      <select id="plan">
+        <option value="mensal">Plano Mensal</option>
+        <option value="trimestral">Plano Trimestral</option>
+        <option value="semestral">Plano Semestral</option>
+        <option value="anual">Plano Anual</option>
+      </select>
+    </div>
+
+    <div class="plan-price">
+      <p>Preço: <span id="price">Selecione um plano</span></p>
+    </div>
+
+    <div class="card-container" id="plan-cards">
+    </div>
+  </section>
+
+
+  <!-- ########## SECTION 5 - Contato ##########-->
+  <section id="contato">
+    <!-- Conteúdo da seção CONTATO -->
+  </section>
+  <!-- ########## SECTION 6 - Contato e Rodapé ##########-->
+  <section id="contato">
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-instagram text-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter text-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-facebook text-facebook"></i></a>
+    </div>
+  </section>
+
+  <script src="script/index_script.js"></script>
+</body>
+
+</html>
