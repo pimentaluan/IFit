@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFit - Seu Treino</title>
+  <link rel="stylesheet" type="text/css" href="/style/treinos_style.css" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="imgs/logo 1.png"></a>
+  </header>
+
+  <h1>Crie seu próprio treino</h1>
+
+  <section id="infoCaracteristicas">
+    <div id="linha_1_caracter" class="linhas">
+      <div>
+        <p>Altura (cm)</p>
+        <input id="altura" type="number">
+      </div>
+      <div>
+        <p>Peso (kg)</p>
+        <input id="peso" type="number">
+      </div>
+      <div>
+        <p>Idade</p>
+        <input id="idade" type="number">
+      </div>
+    </div>
+
+    <div id="linha_2_caracter" class="linhas">
+      <div>
+        <p>Gênero</p>
+        <select id="genero">
+          <option value="none" selected disabled hidden>Seleção</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+      </div>
+      <div>
+        <p>Lesão</p>
+        <select id="lesao">
+          <option value="none" selected disabled hidden>Seleção</option>
+          <option value="não">Nunca tive uma lesão</option>
+          <option value="Tórax, Ombro ou Tríceps">Tórax, Ombro e Tríceps</option>
+          <option value="Costas, Abdômen ou Bíceps">Costas, Abdômen e Bíceps</option>
+          <option value="Parte Inferior, Pernas ou Glúteo">Parte Inferior, Pernas e Glúteo</option>
+        </select>
+      </div>
+      <div>
+        <p>Objetivo</p>
+        <select id="objetivo">
+          <option value="none" selected disabled hidden>Seleção</option>
+          <option value="Criar massa muscular">Criar massa muscular</option>
+          <option value="Emagrecer">Emagrecer</option>
+          <option value="Melhorar a saúde">Melhorar a saúde</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div id="linha_3_caracter" class="linhas">
+      <div>
+        <p>Disponibilidade</p>
+        <select id="dias">
+          <option value="none" selected disabled hidden>Seleção</option>
+          <option value="2">Posso treinar 2 vezes na semana</option>
+          <option value="3">Posso treinar 3 vezes na semana</option>
+          <option value="4">Posso treinar 4 vezes na semana</option>
+          <option value="5">Posso treinar 5 vezes na semana</option>
+          <option value="6">Posso treinar 6 vezes na semana</option>
+          <option value="7">Posso treinar 7 vezes na semana</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="linha_4_caracter" class="linhas">
+      <div>
+        <p>Local de treino</p>
+        <select id="local">
+          <option value="none" selected disabled hidden>Seleção</option>
+          <option value="Academia">Na academia</option>
+          <option value="Em casa">Em casa, parques ou sem o máquinário da academia</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="linha_4_caracter" class="linhas">
+      <button id="montarTreino">Criar treino</button>
+    </div>
+  </section>
+
+  <section id="infoTreinos">
+    <div id="navegacao" style="display: none;">
+      <i id="diaAnterior" class="fas fa-arrow-left"></i>
+      <i id="proximoDia" class="fas fa-arrow-right"></i>
+    </div>
+    <div id="treinos"></div>
+    <div>
+      <button id="novasop" style="display: none;">Gerar novas opções!</button>
+    </div>
+  </section>
+
+  <script type="module" src="script/dados.js"></script>
+</body>
+
+</html>
